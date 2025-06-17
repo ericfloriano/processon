@@ -4,6 +4,24 @@ Este projeto oferece uma interface interativa para processar e consultar dados d
 
 ---
 
+## 🎯 Contexto do Desafio I2A2
+
+Esta atividade faz parte do curso I2A2 e tem como objetivo principal **criar um ou mais agentes que permitam a um usuário realizar perguntas sobre arquivos CSV disponibilizados**.
+
+Por exemplo, os usuários podem perguntar:
+* "Qual é o fornecedor que teve maior montante recebido?"
+* "Qual item teve maior volume entregue (em quantidade)?"
+* E assim por diante, explorando os dados de forma conversacional.
+
+### Recursos Utilizados
+
+Para este desafio, é fornecido um arquivo chamado `202401_NFs.zip`. Este arquivo contém:
+
+* **`202401_NFs_Cabecalho.csv`**: O cabeçalho de 100 notas fiscais selecionadas aleatoriamente do arquivo de notas fiscais do mês de janeiro/2024, disponibilizado pelo Tribunal de Contas da União.
+* **`202401_NFs_Itens.csv`**: Os itens correspondentes das 100 notas fiscais selecionadas.
+
+---
+
 ## 🚀 Primeiros Passos
 
 Siga estas instruções para configurar e executar o projeto localmente.
@@ -59,10 +77,15 @@ Antes de começar, certifique-se de ter o seguinte instalado:
     ```
 
 2.  **Acesse a interface web:**
-    Assim que a aplicação iniciar, ela fornecerá uma URL local (por exemplo, `http://127.0.0.1:7860`). Abra esta URL em seu navegador web. O Gradio também fornecerá um link público de compartilhamento se `share=True` estiver habilitado em `demo.launch()`.
+    Você pode acessar a interface do Gradio localmente (o link será exibido no seu terminal, geralmente `http://127.0.0.1:7860`) ou através do link de compartilhamento público fornecido abaixo.
+
+    ---
+    **Link para acessar a interface do Gradio e fazer perguntas a respeito dos dados carregados:**
+    [https://9cd92c0aa2a947883d.gradio.live/](https://9cd92c0aa2a947883d.gradio.live/)
+    ---
 
 3.  **Envie seu arquivo ZIP:**
-    Na interface do Gradio, clique no componente "Faça upload do arquivo ZIP" e selecione um arquivo `.zip` contendo um ou mais arquivos CSV.
+    Na interface do Gradio, clique no componente "Faça upload do arquivo ZIP" e selecione um arquivo `.zip` contendo um ou mais arquivos CSV (como o `202401_NFs.zip` mencionado no contexto do desafio).
 
 4.  **Processe o arquivo ZIP:**
     Clique no botão "Processar ZIP". A aplicação extrairá os CSVs e os carregará em DataFrames do pandas. A caixa de texto "Status" mostrará quantos arquivos CSV foram carregados.
@@ -103,9 +126,24 @@ A aplicação combina várias bibliotecas poderosas para alcançar sua funcional
 
 ## 🛑 Limitações
 
-* **Limite da Janela de Contexto:** Embora `gpt-4.1-mini` tenha uma grande janela de contexto, alimentar o conteúdo inteiro de CSVs muito grandes pode excedê-la. Atualmente, apenas as 10 primeiras linhas de cada DataFrame são usadas como contexto. Para conjuntos de dados maiores, seria necessária uma recuperação de contexto mais sofisticada (por exemplo, usando embeddings e bancos de dados vetoriais).
+* **Context Window Limit:** Embora `gpt-4.1-mini` tenha uma grande janela de contexto, alimentar o conteúdo inteiro de CSVs muito grandes pode excedê-la. Atualmente, apenas as 10 primeiras linhas de cada DataFrame são usadas como contexto. Para conjuntos de dados maiores, seria necessária uma recuperação de contexto mais sofisticada (por exemplo, usando embeddings e bancos de dados vetoriais).
 * **Interpretação de Dados:** A qualidade da resposta da IA depende muito da clareza da pergunta e da representatividade do contexto fornecido.
 * **Segurança:** Armazenar chaves de API diretamente no código não é recomendado para ambientes de produção.
+
+---
+
+## 👥 Membros do Grupo ProcessON
+
+* Aurilene Ribeiro
+* Eduardo Orlando
+* Eric Bueno
+* Felipe Moura
+* João Vitor
+* Leonardo Santos
+* Letícia Machado
+* Marco Andrey
+* Pascual Matheo
+* Sandro Costa
 
 ---
 
