@@ -153,4 +153,4 @@ Contribuições são bem-vindas! Se você tiver sugestões para melhorias ou nov
 
 ## 📄 Licença
 
-Este projeto é de código aberto e está disponível sob a [Licença MIT](LICENSE) (se você tiver uma, caso contrário, remova esta seção).
+Este projeto é de código aberto e está disponível sob a [Licença MIT](LICENSE.txt)
