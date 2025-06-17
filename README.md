@@ -77,12 +77,10 @@ Antes de começar, certifique-se de ter o seguinte instalado:
     ```
 
 2.  **Acesse a interface web:**
-    Você pode acessar a interface do Gradio localmente (o link será exibido no seu terminal, geralmente `http://127.0.0.1:7860`) ou através do link de compartilhamento público fornecido abaixo.
+    Você pode acessar a interface do Gradio localmente (o link será exibido no seu terminal, geralmente `http://127.0.0.1:7860`) ou através do link de compartilhamento público fornecido abaixo: 
 
-    ---
     **Link para acessar a interface do Gradio e fazer perguntas a respeito dos dados carregados:**
-    [https://9cd92c0aa2a947883d.gradio.live/](https://9cd92c0aa2a947883d.gradio.live/)
-    ---
+    [Interface Gradio](https://9cd92c0aa2a947883d.gradio.live/)
 
 3.  **Envie seu arquivo ZIP:**
     Na interface do Gradio, clique no componente "Faça upload do arquivo ZIP" e selecione um arquivo `.zip` contendo um ou mais arquivos CSV (como o `202401_NFs.zip` mencionado no contexto do desafio).
