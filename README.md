@@ -1,4 +1,4 @@
-# 🧠 ProcessON - I2A2 | Consulta de Dados CSV por Agente
+# 🧠 Agentes Autônomos – Análise de CSV
 
 Este projeto oferece uma interface interativa para processar e consultar dados de múltiplos arquivos CSV e XLSX, incluindo aqueles contidos em arquivos ZIP. Ele aproveita o poder dos Modelos de Linguagem Grandes (LLMs) via biblioteca `langchain` e `Gradio` para uma interface web amigável, permitindo responder a perguntas em linguagem natural sobre os dados carregados de forma mais robusta e completa, utilizando um agente de DataFrames do LangChain.
 
